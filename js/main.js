@@ -1,23 +1,4 @@
 
-// Whatssap Function
-function WtsBtnSend() {
-    // Get a reference to the button element
-    const whatsappButton = document.getElementById("whatsappButton");
-
-    whatsappButton.addEventListener("click", function(){
-
-        const phoneNumber = "0601548990";
-        const message = "Hello, this is a WhatsApp message From Your Portfolio!";
-        
-        // Generate the WhatsApp link
-        const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-        
-        // Open the link in a new tab or window
-        window.open(whatsappLink);
-    });
-}
-
-
 // Func To Check is it Sun Or Moon Icon
 function wordExistsCheck (word, string) {
     (string.includes(word)) ? true : false;
@@ -162,8 +143,6 @@ dates();
 // Quotes
 quotesHandling();
 
-// Whatssap Button Click
-WtsBtnSend();
 
 //
 document.addEventListener("DOMContentLoaded",()=>{
